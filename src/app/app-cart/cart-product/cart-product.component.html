@@ -1,0 +1,36 @@
+<tr>
+<td>
+    <div class="media">
+      <div class="d-flex">
+        <img src="{{produit.picture}}"  alt=""  width="80" height="80"/>
+      </div>
+      <div class="media-body">
+        <p>{{produit.libelle}}</p>
+      </div>
+    </div>
+  </td>
+  <td>
+    <h5  *ngIf="produit.pourcentageRemise == 0" >  ${{ produit.prixUnitaire }}</h5>
+    <h5> <del *ngIf="produit.pourcentageRemise > 0" class="cross " style="color: #F1948A;">${{ produit.prixUnitaire }}</del> </h5>
+
+    <small class="text-muted" > ${{((100 -produit.pourcentageRemise) *produit.prixUnitaire )/100  }} each </small>
+  </td>
+  <td>
+    <div class="product_count">
+      <input type="number" 
+              min="0"
+              class="form-control" 
+              [value]="produit.qte"
+              (blur)="validateInput()"
+              >
+      <!-- <input class="input-number" type="text" value="1" min="0" max="10"> -->
+      
+    </div>
+  </td>
+  <td>
+    <h5>${{produit.prixUnitaire * produit.qte}}</h5>
+  </td>
+  <td > 
+    <a (click)="onDelete()" class="button rounded-0 primary-bg text-white  btn_1" data-abc="true"> Remove</a> 
+  </td>
+</tr>

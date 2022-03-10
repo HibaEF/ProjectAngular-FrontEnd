@@ -1,0 +1,32 @@
+<!--================ confirmation part start =================-->
+
+<section class="confirmation_part padding_top" >
+  <button class="genric-btn primary radius" (click)="pdfMaker()">Télécharger les détails</button>
+
+    <div class="container" id="livraisonpdf">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="confirmation_tittle">
+            <span>Thank you. Your order has been received.</span>
+          </div>
+        </div>
+        <div id="livraisonpdf" class="col-lg-6 col-lx-4">
+          <div class="single_confirmation_details">
+            <h4>Les détails de la livraison</h4>
+            <ul>
+              <li>
+                <p>Identifiant</p><span>: {{livraison.id}}</span>
+              </li>
+              <li>
+                <p>Date de la livraison</p><span>: {{date}}</span>
+              </li>
+              <li>
+                <p>Adresse </p><span>: {{livraison.adresseLvr}}</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--================ confirmation part end =================-->

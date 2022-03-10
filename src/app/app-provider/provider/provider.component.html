@@ -1,0 +1,40 @@
+<div class="col-lg-12 col-sm-6" width="800px" height="1000px">
+    <div class="single_provider_item" height="300vh" width="800px" alt="">
+       <div class="row">
+        <img src="{{provider.logo}}" class="card-img-top" alt="...">
+    </div>
+
+        <div class="single_provider_text mt-5">
+            <div class="row">
+            <h3 class="name">{{provider.name}}</h3>
+        </div>
+        <div class="row" >
+            <h4 class="libelle">{{provider.libelle}}</h4>
+        </div>
+        <div class="row">
+            <div class="col"><a class="show" [routerLink]="['/provider',provider.id]">view More</a></div>
+            <div class="col"><button class="btn btn-dark " type="button" (click)="delete()">Delete</button></div>
+        </div>
+        </div>
+    </div>
+</div>
+<!-- 
+<div class="card-body">
+    <h5 class="card-title   text-uppercase">{{provider.libelle}}
+
+    </h5>
+    <p class="card-text">{{provider.name}}</p>
+    <div class="fs-5 mb-5">
+        <div class="pricingTable">
+
+            <span>{{provider.email}}</span>
+
+        </div>
+
+    </div>
+    <a [routerLink]="['/provider',provider.id]">view More</a>
+
+    &nbsp;
+
+</div>
+</div> -->

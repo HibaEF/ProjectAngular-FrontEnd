@@ -1,0 +1,45 @@
+<section>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="breadcrumb_iner">
+          <div class="breadcrumb_iner_item">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<br>
+<section class="cat_product_area section_padding">
+
+
+
+  <div class="chercher-produit">
+    <div class="row">
+      <div class="col-md-3 offset-md-3">
+    <input class="form-control " type="text" name="search" [(ngModel)]="searchText"
+           autocomplete="off" placeholder="&#61442;  Taper pour chercher..">
+  </div></div></div>
+  <br><br>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-1">
+      </div>
+      <div class="col-lg-9">
+        <div class="row align-items-center latest_product_inner">
+          <app-produit *ngFor="let currentProduct of listProduct | filter:searchText" [product]="currentProduct"
+                       (notification)="like($event)"
+                       class="col-md-3">
+
+          </app-produit>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+</section>

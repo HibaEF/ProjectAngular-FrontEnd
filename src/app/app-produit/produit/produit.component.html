@@ -1,0 +1,33 @@
+<div class="col-lg-12 col-lg" >
+  <div class="single_product_item" >
+      <img src="{{product.picture}}" height="300vh" alt="">
+      <div class="single_product_text">
+          <h4 class="card-title   text-uppercase">{{product.libelle}}</h4>
+          <h3>{{product.prixUnitaire | currency :'USD':true}}</h3>
+
+         <!-- <a href="#" class="add_cart">+ add to cart <i class="bi-cart-fill me-1"></i></a>-->
+        <a [routerLink]="['/listProduit',product.id]" class="add_cart"><i class="ti-tag"></i>View Detail</a>
+
+<br>
+       <br>
+        <div class="row ">
+
+        <button class=" btn  btn-primary" (click)="notifierParent()">
+          <i class="far fa-heart"></i>
+          {{product.nbrLike}}
+        </button>
+        &nbsp;</div>
+        <div class="row">
+          <button  [routerLink]="['/listProduit',product.id]" class="btn btn-outline-dark flex-shrink-0" type="button" style="float: right"
+          >
+            <i class="fas fa-cart-plus" ></i>
+            Add to Cart
+          </button>
+        </div>
+
+
+
+      </div>
+  </div>
+</div>
+<br>

@@ -1,0 +1,43 @@
+<section class="breadcrumb breadcrumb_bg">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="breadcrumb_iner">
+                    <div class="breadcrumb_iner_item">
+                        <h2>Cart Providers</h2>
+                        <p>Home <span>-</span>Cart Providers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+&nbsp;
+
+<section class="cat_provider_area section_padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3"></div>
+
+            <div class="search-provider col-md-4 ">
+                <input class="form-control" type="text" name="search" [(ngModel)]="searchText" 
+                autocomplete="off" placeholder="&#61442;  Taper pour chercher..">
+              </div>
+
+            <div class="col-lg-8">
+                <div class="row align-items-center latest_provider_inner">
+
+                    <app-provider *ngFor="let currentProvider of listProvider|filter:searchText" 
+                    [provider]="currentProvider"
+                    (deleteNotif)="deletePro($event)"
+                        class="col-md-4">
+                    </app-provider>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</section>

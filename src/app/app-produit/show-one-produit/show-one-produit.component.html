@@ -1,0 +1,43 @@
+
+
+
+
+
+<section class="py-5">
+  <div class="container px-4 px-lg-5 my-5">
+    <div class="row gx-4 gx-lg-5 align-items-center">
+      <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0"  alt="..."  src="{{product.picture}}"/>
+
+      <ul class="blog-info-link mt-3 mb-4">
+        <li><a href="#"><i class="far fa-user"></i> User</a></li>
+        <li><a href="#"><i class="far fa-heart"></i> Likes</a></li>
+        <li><a href="#"><i class="far fa-comments"></i>  Comments</a></li>
+      </ul></div>
+      <div class="col-md-6">
+
+        <h1 class="display-5 fw-bolder text-uppercase">{{product.libelle}}</h1>
+        <h2 class="display-5">{{product.code}}</h2>
+
+        <!--<div class="product-brand">{{product.detailproduit.CategorieProduit}}</div>-->
+
+        <div class="fs-5 mb-5">
+          <div class="pricingTable">
+
+            <span class="product-price">{{product.prixUnitaire | currency :'USD':true}}</span>
+
+          </div>
+
+        </div>
+        <p class="text-primary">Like: {{product.nbrLike}}</p>
+        <p class="lead">{{product.description}}</p>
+        <button class=" btn  btn-primary" (click)="addToCart(cartProduct)" > Add To Cart </button>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="page-content page-container" id="page-content">
+    <button class="btn btn-outline-primary" (click)="fixProduct()"><i class="ti-arrow-left"></i></button>
+  </div>
+
+</section>

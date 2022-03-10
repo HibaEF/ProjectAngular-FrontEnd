@@ -1,0 +1,747 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>projet-magasin-front documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">projet-magasin-front documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  ListLivraisonComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/app-livreur/list-livraison/list-livraison.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-list-livraison</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./list-livraison.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./list-livraison.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#Livraison" >Livraison</a>
+                            </li>
+                            <li>
+                                <a href="#livreur" >livreur</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#deliver" >deliver</a>
+                            </li>
+                            <li>
+                                <a href="#generatePDF" >generatePDF</a>
+                            </li>
+                            <li>
+                                <a href="#loadLivraison" >loadLivraison</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(livraisonService: <a href="../injectables/LivraisonService.html" target="_self">LivraisonService</a>, livreurService: <a href="../injectables/LivreurService.html" target="_self">LivreurService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, activated: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/app-livreur/list-livraison/list-livraison.component.ts:16</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>livraisonService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/LivraisonService.html" target="_self" >LivraisonService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>livreurService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/LivreurService.html" target="_self" >LivreurService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>activated</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deliver"></a>
+                    <span class="name">
+                        <span ><b>deliver</b></span>
+                        <a href="#deliver"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>deliver(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="40"
+                            class="link-to-prism">src/app/app-livreur/list-livraison/list-livraison.component.ts:40</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generatePDF"></a>
+                    <span class="name">
+                        <span ><b>generatePDF</b></span>
+                        <a href="#generatePDF"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>generatePDF()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="48"
+                            class="link-to-prism">src/app/app-livreur/list-livraison/list-livraison.component.ts:48</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loadLivraison"></a>
+                    <span class="name">
+                        <span ><b>loadLivraison</b></span>
+                        <a href="#loadLivraison"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>loadLivraison()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="27"
+                            class="link-to-prism">src/app/app-livreur/list-livraison/list-livraison.component.ts:27</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="22"
+                            class="link-to-prism">src/app/app-livreur/list-livraison/list-livraison.component.ts:22</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="Livraison"></a>
+                    <span class="name">
+                        <span ><b>Livraison</b></span>
+                        <a href="#Livraison"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/app-livreur/list-livraison/list-livraison.component.ts:20</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="livreur"></a>
+                    <span class="name">
+                        <span ><b>livreur</b></span>
+                        <a href="#livreur"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Livreur.html" target="_self" >Livreur</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/app-livreur/list-livraison/list-livraison.component.ts:18</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { ActivatedRoute, Router, RouterEvent } from &#x27;@angular/router&#x27;;
+import { Livreur } from &#x27;src/app/core/model/livreur&#x27;;
+import { LivraisonService } from &#x27;src/app/core/services/livraison.service&#x27;;
+import { LivreurService } from &#x27;src/app/core/services/livreur.service&#x27;;
+import { Cell, Img, PdfMakeWrapper, Table, Txt } from &#x27;pdfmake-wrapper&#x27;;
+import { __await } from &#x27;tslib&#x27;;
+import html2canvas from &#x27;html2canvas&#x27;;
+import jsPDF from &#x27;jspdf&#x27;;
+
+@Component({
+  selector: &#x27;app-list-livraison&#x27;,
+  templateUrl: &#x27;./list-livraison.component.html&#x27;,
+  styleUrls: [&#x27;./list-livraison.component.css&#x27;]
+})
+export class ListLivraisonComponent implements OnInit {
+  constructor(private livraisonService: LivraisonService,private livreurService: LivreurService,private router: Router,private activated:ActivatedRoute) { }
+  livreur:Livreur;
+
+   Livraison: any&#x3D; [];
+
+  ngOnInit(): void {
+    this.loadLivraison()
+    this.livreur&#x3D;this.livreurService.currentLivreur;
+    console.log(this.livreur)
+  }
+    loadLivraison()
+    {
+      this.activated.paramMap.subscribe(
+        (params)&#x3D;&gt; {
+          let id &#x3D; params.get(&#x27;id&#x27;);
+      
+          this.livreurService.getListLivraisonById(id).subscribe(
+        (data:any[])&#x3D;&gt; this.Livraison&#x3D; data
+      )
+          }
+      )
+
+    }
+  deliver(id:number)
+  {
+    console.log(this.livreur)
+    this.livraisonService.deliverLivraison(id).subscribe();
+    this.ngOnInit()
+
+  }
+
+ generatePDF(){
+    let data:any &#x3D; document.getElementById(&#x27;livraisonpdf&#x27;);
+    html2canvas(data).then(canvas &#x3D;&gt; {
+        var imgData &#x3D; canvas.toDataURL(&#x27;image/png&#x27;);
+        var doc &#x3D;new jsPDF(&#x27;l&#x27;,&#x27;mm&#x27;,&#x27;a4&#x27;);
+        let imgHeight&#x3D;canvas.height*250/canvas.width
+        doc.addImage(imgData,&#x27;PNG&#x27;,0,10,290,imgHeight)
+        doc.save(&quot;livraison.pdf&quot;)
+      
+      });
+}
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;!-- breadcrumb start--&gt;
+&lt;section class&#x3D;&quot;breadcrumb breadcrumb_bg&quot;&gt;
+    &lt;div class&#x3D;&quot;container&quot;&gt;
+      &lt;div class&#x3D;&quot;row justify-content-center&quot;&gt;
+        &lt;div class&#x3D;&quot;col-lg-8&quot;&gt;
+          &lt;div class&#x3D;&quot;breadcrumb_iner&quot;&gt;
+            &lt;div class&#x3D;&quot;breadcrumb_iner_item&quot;&gt;
+              &lt;h2&gt;Votre liste de livraison&lt;/h2&gt;
+              &lt;p&gt;Home &lt;span&gt;-&lt;/span&gt;Livraison&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;button class&#x3D;&quot;genric-btn primary radius&quot; (click)&#x3D;&quot;generatePDF()&quot;&gt;Génerer un pdf&lt;/button&gt;
+
+  &lt;!-- breadcrumb start--&gt;
+
+  &lt;section class&#x3D;&quot;checkout_area padding_top&quot;&gt;
+    &lt;div class&#x3D;&quot;container&quot;  id&#x3D;&quot;livraisonpdf&quot;&gt;
+    &lt;script src&#x3D;&quot;https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js&quot;&gt;&lt;/script&gt;
+    &lt;div class&#x3D;&quot;progress-table-wrap&quot;&gt;
+        &lt;div class&#x3D;&quot;progress-table&quot;&gt;
+            &lt;div class&#x3D;&quot;table-head&quot;&gt;
+                &lt;div class&#x3D;&quot;serial&quot;&gt;#&lt;/div&gt;
+                &lt;div class&#x3D;&quot;country&quot;&gt;Adresse de la livraison&lt;/div&gt;
+                &lt;div class&#x3D;&quot;visit&quot;&gt;Date de la livraison&lt;/div&gt;
+                &lt;div class&#x3D;&quot;percentage&quot;&gt;Action&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;table-row&quot; *ngFor&#x3D;&quot;let livraison of Livraison&quot;&gt;
+                &lt;div class&#x3D;&quot;serial&quot;&gt;{{livraison.id}}&lt;/div&gt;
+                &lt;div class&#x3D;&quot;country&quot;&gt; &lt;img src&#x3D;&quot;../../../assets/img/elements/f1.jpg&quot; width&#x3D;&quot;80px&quot; height&#x3D;&quot;80px&quot; alt&#x3D;&quot;flag&quot;&gt;{{livraison.adresseLvr}}&lt;/div&gt;
+                &lt;div class&#x3D;&quot;visit&quot;&gt;{{livraison.dateLivraisonDate}}&lt;/div&gt;
+                &lt;div *ngIf&#x3D;&quot;!livraison.status&quot;&gt;
+                    &lt;button class&#x3D;&quot;genric-btn success radius&quot; (click)&#x3D;&quot;deliver(livraison.id)&quot;&gt;Delivrée&lt;/button&gt;
+                &lt;/div&gt;
+                &lt;div *ngIf&#x3D;&quot;livraison.status&quot;&gt;
+                    &lt;button class&#x3D;&quot;genric-btn disabled&quot; disabled&gt;Delivrée&lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            
+                    &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./list-livraison.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.webviewer{
+    width: 100%;
+    height: 100vh;
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><!-- breadcrumb start--><section class="breadcrumb breadcrumb_bg">    <div class="container">      <div class="row justify-content-center">        <div class="col-lg-8">          <div class="breadcrumb_iner">            <div class="breadcrumb_iner_item">              <h2>Votre liste de livraison</h2>              <p>Home <span>-</span>Livraison</p>            </div>          </div>        </div>      </div>    </div>  </section>  <button class="genric-btn primary radius" (click)="generatePDF()">Génerer un pdf</button>  <!-- breadcrumb start-->  <section class="checkout_area padding_top">    <div class="container"  id="livraisonpdf">    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>    <div class="progress-table-wrap">        <div class="progress-table">            <div class="table-head">                <div class="serial">#</div>                <div class="country">Adresse de la livraison</div>                <div class="visit">Date de la livraison</div>                <div class="percentage">Action</div>            </div>            <div class="table-row" *ngFor="let livraison of Livraison">                <div class="serial">{{livraison.id}}</div>                <div class="country"> <img src="../../../assets/img/elements/f1.jpg" width="80px" height="80px" alt="flag">{{livraison.adresseLvr}}</div>                <div class="visit">{{livraison.dateLivraisonDate}}</div>                <div *ngIf="!livraison.status">                    <button class="genric-btn success radius" (click)="deliver(livraison.id)">Delivrée</button>                </div>                <div *ngIf="livraison.status">                    <button class="genric-btn disabled" disabled>Delivrée</button>                </div>            </div>                                </div>    </div></div></section></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BannerComponent', 'selector': 'app-banner'},{'name': 'CartComponent', 'selector': 'app-cart'},{'name': 'CartProductComponent', 'selector': 'app-cart-product'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'FormLivraisonCheckoutComponent', 'selector': 'app-form-livraison-checkout'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HireLivreurComponent', 'selector': 'app-hire-livreur'},{'name': 'ListLivraisonComponent', 'selector': 'app-list-livraison'},{'name': 'LivraisonComponent', 'selector': 'app-livraison'},{'name': 'LivreurComponent', 'selector': 'app-livreur'},{'name': 'MainLivraisonComponent', 'selector': 'app-main-livraison'},{'name': 'MainProduitComponent', 'selector': 'app-main-produit'},{'name': 'MainProviderComponent', 'selector': 'app-main-provider'},{'name': 'ProductDetailTestComponent', 'selector': 'app-product-detail-test'},{'name': 'ProductTestComponent', 'selector': 'app-product-test'},{'name': 'ProduitComponent', 'selector': 'app-produit'},{'name': 'ProviderComponent', 'selector': 'app-provider'},{'name': 'ShowOneProduitComponent', 'selector': 'app-show-one-produit'},{'name': 'ShowOneProviderComponent', 'selector': 'app-show-one-provider'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'ListLivraisonComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'ListLivraisonComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<!-- breadcrumb start-->
+<section class="breadcrumb breadcrumb_bg">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="breadcrumb_iner">
+            <div class="breadcrumb_iner_item">
+              <h2>Votre liste de livraison</h2>
+              <p>Home <span>-</span>Livraison</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <button class="genric-btn primary radius" (click)="generatePDF()">Génerer un pdf</button>
+
+  <!-- breadcrumb start-->
+
+  <section class="checkout_area padding_top">
+    <div class="container"  id="livraisonpdf">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+    <div class="progress-table-wrap">
+        <div class="progress-table">
+            <div class="table-head">
+                <div class="serial">#</div>
+                <div class="country">Adresse de la livraison</div>
+                <div class="visit">Date de la livraison</div>
+                <div class="percentage">Action</div>
+            </div>
+            <div class="table-row" *ngFor="let livraison of Livraison">
+                <div class="serial">{{livraison.id}}</div>
+                <div class="country"> <img src="../../../assets/img/elements/f1.jpg" width="80px" height="80px" alt="flag">{{livraison.adresseLvr}}</div>
+                <div class="visit">{{livraison.dateLivraisonDate}}</div>
+                <div *ngIf="!livraison.status">
+                    <button class="genric-btn success radius" (click)="deliver(livraison.id)">Delivrée</button>
+                </div>
+                <div *ngIf="livraison.status">
+                    <button class="genric-btn disabled" disabled>Delivrée</button>
+                </div>
+            </div>
+            
+                    </div>
+    </div>
+</div>
+</section>
